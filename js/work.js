@@ -1,4 +1,27 @@
+function calculateTwoValue(firstValue,secondValue) {
+    const firstField = document.getElementById(firstValue)
+    const firstValueString = firstField.value;
+    const previosfirstValue = parseFloat(firstValueString);
+    
+    const secondField = document.getElementById(secondValue)
+    const secondValueString = secondField.value;
+    const previossecondValue = parseFloat(secondValueString); 
 
+    const total=previosfirstValue*previossecondValue;
+    return total;
+}
+function calculation(firstCal,secondCal){
+    const displayfieldOfOutpt = document.getElementById('Calculation-output') ;
+
+    const tr =document.createElement('tr') ;
+    tr.innerHTML =`
+        <td>${1}</td>
+        <td>${firstCal}</td>
+        <td> ${secondCal}</td>
+
+    `;
+    displayfieldOfOutpt.appendChild(tr);
+}
 
 document.getElementById('blog-btn').addEventListener('click', function(){
     
@@ -6,28 +29,10 @@ document.getElementById('blog-btn').addEventListener('click', function(){
 })
 
 document.getElementById('Triangle-calculate-btn').addEventListener('click', function(){
-    const trianglebedField = document.getElementById('Triangle-bed-field')
-    const trianglebedValueString = trianglebedField.value;
-    const previosTringelbedValue = parseFloat(trianglebedValueString);
+    const triangle=calculateTwoValue('Triangle-bed-field','Triangle-hight-field')   
+    const TriangelTotal=triangle*.5;
+
+    calculation('Triangel',TriangelTotal)
+
     
-    const trianglehightField = document.getElementById('Triangle-hight-field')
-    const trianglehightValueString = trianglehightField.value;
-    const previosTringelhightValue = parseFloat(trianglehightValueString); 
-
-    const total=previosTringelbedValue*previosTringelhightValue;
-    const TriangelTotal=total*.5;
-
-    const btnUse=document.getElementById('blog-btn')
-
-
-    const displayfieldOfOutpt = document.getElementById('Calculation-output') ;
-
-    const tr =document.createElement('tr') ;
-    tr.innerHTML =`
-        <td>${1}</td>
-        <td>${'Triangle'}</td>
-        <td> ${TriangelTotal}</td>
-
-    `;
-    displayfieldOfOutpt.appendChild(tr,btnUse);
 })
