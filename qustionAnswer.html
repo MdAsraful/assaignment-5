@@ -4,17 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blog Page </title>
 </head>
 <body>
-    <h3> What is DOM manipulation ? What is the purpose of DOM ? </h3>
-    
-    <p>It is a software programe that can manipulate website. It perfome CRUD oparetion inside a html file . It's mainly use to make webesite fully functional</p>
-    
-    <h3> How you can select your DOM ?</h3>
-    <p>There are multyple ways to select DOM. like <br>
+    <header class="ml-10 mr-10 mx-auto bg-red-500" >
+        <h1 class="text-center pt-5 pb-5 text-2xl font-bold text-white">The Blog Page </h1>
+    </header>
 
-        
-    </p>
+    <main class="mt-5 ml-10 mr-10 mx-auto  ">
+        <section class=" mt-10 justify-between p-10  rounded-lg border-slate-800 shadow-2xl md:flex ">
+            <div class="md:w-[60%]">
+                <h1 class="font-bold text-2xl ">1. No: What is dom and what is the purpose of dom</h1>
+                <p  class="text-gray pt-10">DOM is Document Object Model (DOM) It’s used to access the content, structureThe DOM is what allows you to change the content and design on structure via JavaScript.
+                </p>
+                <h1 class="font-bold text-2xl pt-10 ">The purpose of dom</h1>
+                <p  class="text-gray pt-10">The DOM represents an HTML or XML document as a tree structure, with each element, attribute, and text node represented as a node in the tree. This allows developers to access and modify specific elements, attributes, and content within a web page, which is essential for building dynamic and interactive web applications.
+                    Overall, the purpose of the DOM is to provide a standardized and platform-independent way for developers to interact with web documents, enabling them to create rich, dynamic, and interactive web applications.
+                </p>
+            </div>
+            <div class="  ">
+                <img class="w-[500px] h-[500px]" src="1/3.1.png" alt="">
+            </div>
+        </section>
+
+        <section class=" mt-10 justify-between p-10  rounded-lg border-slate-800 shadow-2xl md:flex ">
+            <div class="md:w-[60%]">
+                <h1 class="font-bold text-2xl ">2. No: How will you select html element using dom name the dom methods.</h1>
+                <p  class="text-gray pt-10">1.Document.getElementById(id) - selects an element with a specific ID.
+                    2.Document.getElementsByClassName(className) - selects all elements with a specific class name.
+                    3.Document.getElementsByTagName(tagName) - selects all elements with a specific tag name.
+                    4.Document.querySelector(selector) - selects the first element that matches a specified CSS selector.
+                    5.Document.querySelectorAll(selector) - selects all elements that match a specified CSS selector.
+            </div>
+            <div class="  ">
+                <img class="w-[500px] h-[500px]" src="1/2.png" alt="">
+            </div>
+        </section>
+
+        <section class="mt-10 justify-between p-10  rounded-lg border-slate-800 shadow-2xl md:flex ">
+            <div class="md:w-[60%]">
+                <h1 class="font-bold text-2xl ">3. No: What is the even bubble</h1>
+                <p  class="text-gray pt-10">When an event is triggered on an element, it first fires on that element, and then it is propagated to its parent element, and so on, until it reaches the root element of the document. This process is called event bubbling, as the event bubbles up from the innermost element to the outermost element.
+                </p>
+                
+            </div>
+            <div class="  ">
+                <img class="w-[500px] h-[500px]" src="1/eventflow.svg" alt="">
+            </div>
+        </section>
+        <section class=" mt-10 justify-between p-10  rounded-lg border-slate-800 shadow-2xl md:flex ">
+            <div class="md:w-[60%]">
+                <h1 class="font-bold text-2xl ">4. what is callback function and why will you use it</h1>
+                <p  class="text-gray pt-10">A callback function is a function that is passed as an argument to another function, and is invoked by that function at a specific time or under specific conditions. The callback function can then perform some operation or return a value that can be used by the calling function.
+                </p>
+                <h1 class="font-bold text-2xl pt-10 ">How it use:</h1>
+                <p  class="text-gray pt-10">Asynchronous operations: When you have an operation that takes some time to complete, such as making an API call or reading a file, you can use a callback function to handle the result of that operation once it completes. This allows your code to continue running while the operation is being performed, rather than blocking the execution of other code.
+
+                    Event handling: When you want to respond to an event, such as a button click or a key press, you can use a callback function to handle the event when it occurs. The event is passed as an argument to the callback function, which can then perform some action based on the event.
+                    
+                    Modular programming: When you want to break your code into smaller, reusable modules, you can use a callback function to allow one module to call another module and pass data or functionality between them.
+                </p>
+            </div>
+            <div class="  ">
+                <img class="w-[500px] h-[500px]" src="1/3.png" alt="">
+            </div>
+        </section>
+
+    </main>
+    <footer class="ml-10 mr-10 mx-auto bg-red-500 h-[70px] mb-10">
+       
+    </footer>
+    
 </body>
 </html>
