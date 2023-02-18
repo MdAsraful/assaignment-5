@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assaignment-5</title>
+    <link rel="stylesheet" href="style.css">
     
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <!-- nav bar section  -->
     
     <section class="grid grid-cols-1 container mx-auto my-6 ">
         <div class="bg-sky-100 px-10 py-3 rounded-md flex justify-between">
@@ -17,13 +19,101 @@
                 <p class="font-normal text-xl text-slate-500">Geometry Genius</p>
             </div>
             <div>
-                <button class="bg-sky-600 py-2 px-7 mt-2 rounded-md text-white">Blog</button>
+                <button id="blog-btn" class="bg-sky-600 py-2 px-7 mt-2 rounded-md text-white">Blog</button>
             </div>
             
            
         </div>
         
     </section>
+    <!-- Card Section  -->
+    <section class=" gap-4 justify-between w-[1200px] mx-auto mt-5 h-[80vh] md:flex  ">
+
+        <div class=" w-[900px] cards grid gap-4 grid-cols-1 md grid md:grid-cols-3">
+            <div class=" border-2 border-[rgba(17, 17, 17, 0.1)] rounded-md rounded-md    ">
+                <img class=" py-5 h-[100px w-[100px] mx-auto " src="images/triangle.png" alt="">
+                <h1 class=" text-1xl font-medium text-center py-5">Triangle</h1>
+                <div class="flex justify-center gap-2">
+                    <input id="Triangle-bed-field" class="px-2 w-[50px]" type="text" placeholder="b"><label for="">cm</label>
+                    <input id="Triangle-hight-field" class="px-2 w-[50px]" type="text" placeholder="h"><label for="">cm</label>
+                </div>
+               <div class="flex justify-center">
+                <button id="Triangle-calculate-btn" class="bg-[#1090D8] px-10 mt-5 bg-[#1090D8] rounded-[10px] py-2 mb-10">Calculator</button>
+               </div>
+            </div>
+            <div class="py-5 border-2 border-[rgba(17, 17, 17, 0.1)] rounded-md  ">
+                <img class="h-[100px w-[100px] mx-auto " src="images/rectangle.png" alt="">
+                <h1 class=" text-1xl font-medium text-center py-5">Rectangle</h1>
+                <div class="flex justify-center gap-2">
+                    <input class="px-2 w-[50px]" type="text" placeholder="b"><label for="">cm</label>
+                    <input class="px-2 w-[50px]" type="text" placeholder="h"><label for="">cm</label>
+                </div>
+               <div class="flex justify-center">
+                <button class="px-10 mt-5 bg-[#1090D8] rounded-[10px] py-2">Calculator</button>
+               </div>
+            </div>
+            <div class="py-5 border-2 border-[rgba(17, 17, 17, 0.1)] rounded-md rounded-md  ">
+                <img class="h-[100px w-[100px] mx-auto " src="images/parallelogram.png" alt="">
+                <h1 class=" text-1xl font-medium text-center py-5">Parallelogram</h1>
+                <div class="flex justify-center gap-2">
+                    <input class="px-2 w-[50px]" type="text" placeholder="b"><label for="">cm</label>
+                    <input class="px-2 w-[50px]" type="text" placeholder="h"><label for="">cm</label>
+                </div>
+               <div class="flex justify-center">
+                <button class="px-10 mt-5 bg-[#1090D8] rounded-[10px] py-2">Calculator</button>
+               </div>
+            </div>
+            <div class="py-5 border-2 border-[rgba(17, 17, 17, 0.1)] rounded-md rounded-md  ">
+                <img class="h-[100px w-[100px] mx-auto " src="images/rhombus.png" alt="">
+                <h1 class=" text-1xl font-medium text-center py-5">Rhombus</h1>
+                <div class="flex justify-center gap-2">
+                    <input class="px-2 w-[50px]" type="text" placeholder="b"><label for="">cm</label>
+                    <input class="px-2 w-[50px]" type="text" placeholder="h"><label for="">cm</label>
+                </div>
+               <div class="flex justify-center">
+                <button class="px-10 mt-5 bg-[#1090D8] rounded-[10px] py-2">Calculator</button>
+               </div>
+            </div>
+            <div class="py-5 border-2 border-[rgba(17, 17, 17, 0.1)] rounded-md rounded-md  ">
+                <img class="h-[100px w-[100px] mx-auto " src="images/pentagon.png" alt="">
+                <h1 class=" text-1xl font-medium text-center py-5">Pentagon</h1>
+                <div class="flex justify-center gap-2">
+                    <input class="px-2 w-[50px]" type="text" placeholder="b"><label for="">cm</label>
+                    <input class="px-2 w-[50px]" type="text" placeholder="h"><label for="">cm</label>
+                </div>
+               <div class="flex justify-center">
+                <button class="px-10 mt-5 bg-[#1090D8] rounded-[10px] py-2">Calculator</button>
+               </div>
+            </div>
+            <div class=" py-5 border-2 border-[rgba(17, 17, 17, 0.1)] rounded-md rounded-md  ">
+                <img class="h-[100px w-[100px] mx-auto " src="images/ellipse.png" alt="">
+                <h1 class=" text-1xl font-medium text-center py-5">Ellipse</h1>
+                <div class="flex justify-center gap-2">
+                    <input class="px-2 w-[50px]" type="text" placeholder="b"><label for="">cm</label>
+                    <input class="px-2 w-[50px]" type="text" placeholder="h"><label for="">cm</label>
+                </div>
+               <div class="flex justify-center">
+                <button class="px-10 mt-5 bg-[#1090D8] rounded-[10px] py-2">Calculator</button>
+               </div>
+            </div>
+
+        </div>
+        <div class="w-[300px]">
+            <div class=" py-5 text-green text-center h-[450px] rounded-md border-2 border-[rgba(17, 17, 17, 0.1)] px-3 ">
+                <h1 class="text-2xl">Area Calculation</h1>
+                <div id="Calculation-output">
+
+                </div>
+            </div>
+        </div>
+        
+
+
+    </section>
+
+    <!-- javeScript File  -->
+
+    <script src="js/work.js"></script>
     
 </body>
 </html>
